@@ -1,0 +1,58 @@
+
+while.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  14:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 1b <main+0x1b>
+  1b:	48 89 c1             	mov    rcx,rax
+  1e:	e8 00 00 00 00       	call   23 <main+0x23>
+  23:	48 8d 45 f8          	lea    rax,[rbp-0x8]
+  27:	48 8d 0d 14 00 00 00 	lea    rcx,[rip+0x14]        # 42 <main+0x42>
+  2e:	48 89 c2             	mov    rdx,rax
+  31:	e8 00 00 00 00       	call   36 <main+0x36>
+  36:	48 8d 05 18 00 00 00 	lea    rax,[rip+0x18]        # 55 <main+0x55>
+  3d:	48 89 c1             	mov    rcx,rax
+  40:	e8 00 00 00 00       	call   45 <main+0x45>
+  45:	48 8d 45 f4          	lea    rax,[rbp-0xc]
+  49:	48 8d 0d 14 00 00 00 	lea    rcx,[rip+0x14]        # 64 <main+0x64>
+  50:	48 89 c2             	mov    rdx,rax
+  53:	e8 00 00 00 00       	call   58 <main+0x58>
+  58:	eb 0d                	jmp    67 <main+0x67>
+  5a:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  5d:	83 c0 01             	add    eax,0x1
+  60:	89 45 f4             	mov    DWORD PTR [rbp-0xc],eax
+  63:	83 45 fc 01          	add    DWORD PTR [rbp-0x4],0x1
+  67:	8b 55 f4             	mov    edx,DWORD PTR [rbp-0xc]
+  6a:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  6d:	39 c2                	cmp    edx,eax
+  6f:	75 e9                	jne    5a <main+0x5a>
+  71:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  74:	8b 55 fc             	mov    edx,DWORD PTR [rbp-0x4]
+  77:	48 8d 0d 40 00 00 00 	lea    rcx,[rip+0x40]        # be <main+0xbe>
+  7e:	41 89 d0             	mov    r8d,edx
+  81:	89 c2                	mov    edx,eax
+  83:	e8 00 00 00 00       	call   88 <main+0x88>
+  88:	b8 00 00 00 00       	mov    eax,0x0
+  8d:	48 83 c4 30          	add    rsp,0x30
+  91:	5d                   	pop    rbp
+  92:	c3                   	ret
+  93:	90                   	nop
+  94:	90                   	nop
+  95:	90                   	nop
+  96:	90                   	nop
+  97:	90                   	nop
+  98:	90                   	nop
+  99:	90                   	nop
+  9a:	90                   	nop
+  9b:	90                   	nop
+  9c:	90                   	nop
+  9d:	90                   	nop
+  9e:	90                   	nop
+  9f:	90                   	nop

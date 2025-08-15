@@ -1,0 +1,43 @@
+
+pos.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	48 8d 45 fc          	lea    rax,[rbp-0x4]
+  11:	48 8d 0d 00 00 00 00 	lea    rcx,[rip+0x0]        # 18 <main+0x18>
+  18:	48 89 c2             	mov    rdx,rax
+  1b:	e8 00 00 00 00       	call   20 <main+0x20>
+  20:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  23:	85 c0                	test   eax,eax
+  25:	7e 11                	jle    38 <main+0x38>
+  27:	48 8d 05 03 00 00 00 	lea    rax,[rip+0x3]        # 31 <main+0x31>
+  2e:	48 89 c1             	mov    rcx,rax
+  31:	e8 00 00 00 00       	call   36 <main+0x36>
+  36:	eb 0f                	jmp    47 <main+0x47>
+  38:	48 8d 05 19 00 00 00 	lea    rax,[rip+0x19]        # 58 <main+0x58>
+  3f:	48 89 c1             	mov    rcx,rax
+  42:	e8 00 00 00 00       	call   47 <main+0x47>
+  47:	b8 00 00 00 00       	mov    eax,0x0
+  4c:	48 83 c4 30          	add    rsp,0x30
+  50:	5d                   	pop    rbp
+  51:	c3                   	ret
+  52:	90                   	nop
+  53:	90                   	nop
+  54:	90                   	nop
+  55:	90                   	nop
+  56:	90                   	nop
+  57:	90                   	nop
+  58:	90                   	nop
+  59:	90                   	nop
+  5a:	90                   	nop
+  5b:	90                   	nop
+  5c:	90                   	nop
+  5d:	90                   	nop
+  5e:	90                   	nop
+  5f:	90                   	nop

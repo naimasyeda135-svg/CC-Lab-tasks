@@ -1,0 +1,41 @@
+
+check.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	48 8d 45 fc          	lea    rax,[rbp-0x4]
+  11:	48 8d 0d 00 00 00 00 	lea    rcx,[rip+0x0]        # 18 <main+0x18>
+  18:	48 89 c2             	mov    rdx,rax
+  1b:	e8 00 00 00 00       	call   20 <main+0x20>
+  20:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  23:	83 e0 01             	and    eax,0x1
+  26:	85 c0                	test   eax,eax
+  28:	75 11                	jne    3b <main+0x3b>
+  2a:	48 8d 05 03 00 00 00 	lea    rax,[rip+0x3]        # 34 <main+0x34>
+  31:	48 89 c1             	mov    rcx,rax
+  34:	e8 00 00 00 00       	call   39 <main+0x39>
+  39:	eb 0f                	jmp    4a <main+0x4a>
+  3b:	48 8d 05 09 00 00 00 	lea    rax,[rip+0x9]        # 4b <main+0x4b>
+  42:	48 89 c1             	mov    rcx,rax
+  45:	e8 00 00 00 00       	call   4a <main+0x4a>
+  4a:	b8 00 00 00 00       	mov    eax,0x0
+  4f:	48 83 c4 30          	add    rsp,0x30
+  53:	5d                   	pop    rbp
+  54:	c3                   	ret
+  55:	90                   	nop
+  56:	90                   	nop
+  57:	90                   	nop
+  58:	90                   	nop
+  59:	90                   	nop
+  5a:	90                   	nop
+  5b:	90                   	nop
+  5c:	90                   	nop
+  5d:	90                   	nop
+  5e:	90                   	nop
+  5f:	90                   	nop

@@ -1,0 +1,65 @@
+
+even_odd.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 40          	sub    rsp,0x40
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  14:	c7 45 f8 00 00 00 00 	mov    DWORD PTR [rbp-0x8],0x0
+  1b:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 22 <main+0x22>
+  22:	48 89 c1             	mov    rcx,rax
+  25:	e8 00 00 00 00       	call   2a <main+0x2a>
+  2a:	48 8d 45 f0          	lea    rax,[rbp-0x10]
+  2e:	48 8d 0d 1f 00 00 00 	lea    rcx,[rip+0x1f]        # 54 <main+0x54>
+  35:	48 89 c2             	mov    rdx,rax
+  38:	e8 00 00 00 00       	call   3d <main+0x3d>
+  3d:	48 8d 05 22 00 00 00 	lea    rax,[rip+0x22]        # 66 <main+0x66>
+  44:	48 89 c1             	mov    rcx,rax
+  47:	e8 00 00 00 00       	call   4c <main+0x4c>
+  4c:	48 8d 45 ec          	lea    rax,[rbp-0x14]
+  50:	48 8d 0d 1f 00 00 00 	lea    rcx,[rip+0x1f]        # 76 <main+0x76>
+  57:	48 89 c2             	mov    rdx,rax
+  5a:	e8 00 00 00 00       	call   5f <main+0x5f>
+  5f:	8b 45 f0             	mov    eax,DWORD PTR [rbp-0x10]
+  62:	89 45 f4             	mov    DWORD PTR [rbp-0xc],eax
+  65:	eb 18                	jmp    7f <main+0x7f>
+  67:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  6a:	83 e0 01             	and    eax,0x1
+  6d:	85 c0                	test   eax,eax
+  6f:	75 06                	jne    77 <main+0x77>
+  71:	83 45 fc 01          	add    DWORD PTR [rbp-0x4],0x1
+  75:	eb 04                	jmp    7b <main+0x7b>
+  77:	83 45 f8 01          	add    DWORD PTR [rbp-0x8],0x1
+  7b:	83 45 f4 01          	add    DWORD PTR [rbp-0xc],0x1
+  7f:	8b 45 ec             	mov    eax,DWORD PTR [rbp-0x14]
+  82:	39 45 f4             	cmp    DWORD PTR [rbp-0xc],eax
+  85:	7e e0                	jle    67 <main+0x67>
+  87:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  8a:	48 8d 0d 3f 00 00 00 	lea    rcx,[rip+0x3f]        # d0 <main+0xd0>
+  91:	89 c2                	mov    edx,eax
+  93:	e8 00 00 00 00       	call   98 <main+0x98>
+  98:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  9b:	48 8d 0d 57 00 00 00 	lea    rcx,[rip+0x57]        # f9 <main+0xf9>
+  a2:	89 c2                	mov    edx,eax
+  a4:	e8 00 00 00 00       	call   a9 <main+0xa9>
+  a9:	b8 00 00 00 00       	mov    eax,0x0
+  ae:	48 83 c4 40          	add    rsp,0x40
+  b2:	5d                   	pop    rbp
+  b3:	c3                   	ret
+  b4:	90                   	nop
+  b5:	90                   	nop
+  b6:	90                   	nop
+  b7:	90                   	nop
+  b8:	90                   	nop
+  b9:	90                   	nop
+  ba:	90                   	nop
+  bb:	90                   	nop
+  bc:	90                   	nop
+  bd:	90                   	nop
+  be:	90                   	nop
+  bf:	90                   	nop
